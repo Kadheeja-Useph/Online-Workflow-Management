@@ -1,0 +1,32 @@
+<html>
+<head><title>DataConnectivity</title></head>
+<body>
+<?php
+  include 'dataconnect.php';
+   $Username=$_POST["Username"];
+   $Password=$_POST["Password"];
+   $result=$conn->query("select * from admin where Username='admin' and Password = 'admin'");
+   if($result->num_rows>0)
+   {
+   
+       ?>
+       <script type="text/javascript">
+         alert("Login Success");
+         window.location.replace("adminpage.php");
+       </script>
+       <?php
+     }
+   
+     else
+     {
+       ?>
+       <script type="text/javascript">
+         alert("try again");
+       </script>
+       <?php
+       include 'admin.html';
+     }
+    
+   ?>
+
+</body></html>

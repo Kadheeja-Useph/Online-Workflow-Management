@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>userlogin</title>
+<link href="index.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+body{
+  background-color: lightblue;
+}
+.box{
+  margin-top:10%;
+  margin-left: 40%;
+  background-color:rgba(0,0,0,0.7);
+  width:300px;
+  padding:10px;
+}
+.box h1,h2{
+  text-align: center;
+  color:#fff;
+}
+input{
+  height: 30px;
+  border-radius: 25px;
+}
+form a{
+  color:red;
+  font-size:20px;
+}
+input::placeholder{
+  text-align: center;
+}
+
+</style>
+<body>
+    <header>
+        <div class="main">
+        <div class="logo">
+         <font size="10" > <b>FIX FINDER</b></font>
+
+        </div>
+        <ul class="navarea">
+          <li><a href="adminpage.php">BACK</a></li>
+          <li><a href="logout.php">LOGOUT</a></li>
+
+        </ul>
+      </div>
+    </header>
+    <div class="back">
+        <div class="box">
+            <center>
+                <h1>Admin Register</h1>
+                <form action="addadmin.php" method="POST">
+                <input type="text" name="Username" placeholder="Username" required><br><br>
+                <input type="Password" name="Password" placeholder="Password" required><br><br>
+                <input type="Password" name="ConfirmPassword" placeholder="ConfirmPassword" required><br><br>
+                <input type="submit" value="Login"><br><br>
+                </center>
+                </form>
+         </div>
+       </div>
+</body>
+</html>
